@@ -203,7 +203,12 @@ def show_landing():
 def show_main_app():
     st.switch_page("pages/homepage.py")
 
-    
+
+def main():
+    #
+    set_background_with_overlay("cafe.jpg")
+
+
     if st.query_params.get("reset") == "true":
         st.session_state.started = False
         st.query_params.clear()
@@ -220,6 +225,5 @@ def show_main_app():
 
 
 main()
-
 
 
