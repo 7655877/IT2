@@ -1,0 +1,5 @@
+streamlit
+streamlit-extra
+pandas
+numpy
+streamlit-lottie
