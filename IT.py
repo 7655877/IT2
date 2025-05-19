@@ -225,5 +225,16 @@ def main():
 
 
 main()
+import os
+
+def set_background_with_overlay(image_file):
+    if not os.path.isfile(image_file):
+        st.warning(f"Background image '{image_file}' not found.")
+        return  # hoặc bỏ qua phần này
+
+    with open(image_file, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode()
+    
+    # (phần CSS như cũ)...
 
 
